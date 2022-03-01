@@ -12260,6 +12260,7 @@ MonoBehaviour:
   ScoreText: {fileID: 197186625}
   earthExpoBlue: {r: 0.20392159, g: 1, b: 1, a: 1}
   earthExpoGreen: {r: 0.28235295, g: 1, b: 0.39607847, a: 1}
+  plane: {fileID: 287954774}
   soundBarsTransform: {fileID: 1635329604881295209}
   gravityScale: 0
   gravityValue: 5

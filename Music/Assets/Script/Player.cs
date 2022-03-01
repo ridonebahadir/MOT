@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         //PlayerColor();
         rb.useGravity = false;
-        fog.color = gameObject.GetComponent<Renderer>().material.color;
+        //fog.color = gameObject.GetComponent<Renderer>().material.color;
     }
 
    
@@ -121,6 +121,7 @@ public class Player : MonoBehaviour
 
 
     }
+    public GameObject plane;
     private void LateUpdate()
     {
         //transform.position = new Vector3(0, Mathf.Clamp(transform.position.y, 10, 85), 0);
@@ -136,6 +137,7 @@ public class Player : MonoBehaviour
         {
 
             Finish();
+            plane.SetActive(false);
 
         }
 
@@ -345,9 +347,9 @@ public class Player : MonoBehaviour
         int listColorNumber = Random.Range(0, measureCS.valuesList.Count);
         PlayerColorNumber = measureCS.valuesList[listColorNumber];
         StartCoroutine(ColorChange(listColorNumber));
+      
 
-
-       Cube.color = measureCS.valuesList[listColorNumber];
+        Cube.color = measureCS.valuesList[listColorNumber];
        HeadSet.gameObject.GetComponent<Renderer>().material.color = measureCS.valuesList[listColorNumber];
        
        
@@ -356,6 +358,7 @@ public class Player : MonoBehaviour
     }
     public IEnumerator ColorChange(int listColorNumber)
     {
+       
         
         float ElapsedTime = 0.0f;
         float TotalTime = 1.0f;
