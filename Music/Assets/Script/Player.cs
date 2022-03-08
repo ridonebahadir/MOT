@@ -7,6 +7,7 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    public RhythmVisualizatorPro rhythm;
     public Material fog;
     public Light pointLight;
     public int levelId;
@@ -69,6 +70,7 @@ public class Player : MonoBehaviour
 
         health = 3;
         Cube = GetComponent<Renderer>().material;
+       
         TotalScore = PlayerPrefs.GetInt("TOTALSCORE");
         //mesafe = Camera.main.transform.position - gameObject.transform.position;
         //Camera.main.transform.position = ZoomInCamera.position;
@@ -78,6 +80,7 @@ public class Player : MonoBehaviour
         //PlayerColor();
         rb.useGravity = false;
         //fog.color = gameObject.GetComponent<Renderer>().material.color;
+        PlayerColor();
     }
 
    
@@ -367,6 +370,7 @@ public class Player : MonoBehaviour
         {
             ElapsedTime += Time.deltaTime;
             fog.color = Color.Lerp(fog.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
+            rhythm.colors[0] = Color.Lerp(rhythm.colors[0], measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
             pointLight.color = Color.Lerp(pointLight.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
             yield return null;
         }
