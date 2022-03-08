@@ -8,6 +8,7 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     public Material fog;
+    public Light pointLight;
     public int levelId;
     public GameObject FloatingParent;
     public Image damageImage;
@@ -361,14 +362,16 @@ public class Player : MonoBehaviour
        
         
         float ElapsedTime = 0.0f;
-        float TotalTime = 1.0f;
+        float TotalTime = 2.0f;
         while (ElapsedTime < TotalTime)
         {
             ElapsedTime += Time.deltaTime;
             fog.color = Color.Lerp(fog.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
+            pointLight.color = Color.Lerp(pointLight.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
             yield return null;
         }
         fog.color = measureCS.valuesList[listColorNumber];
+        pointLight.color = measureCS.valuesList[listColorNumber];
     }
         public void RestartScene()
     {
