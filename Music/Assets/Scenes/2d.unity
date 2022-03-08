@@ -12543,7 +12543,7 @@ MonoBehaviour:
   FinishCamera: {fileID: 516144688}
   measureCS: {fileID: 417069695}
   gameManager: {fileID: 749473713}
-  boundPowwer: 700
+  boundPowwer: 1309
   stoopSpeed: 1
   particle: {fileID: 7831682796291213380, guid: 434b4c78390a3e54d8c9c64e78dd51d2, type: 3}
   Earthparticle: {fileID: 7831682796291213380, guid: c0c05619999513442b93d98ad996bfc4, type: 3}

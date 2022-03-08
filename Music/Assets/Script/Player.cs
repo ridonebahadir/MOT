@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public AudioMeasureCS measureCS;
     public GameManager gameManager;
     Rigidbody rb;
-    [Range(0,1000)]
+    [Range(0,2000)]
     public float boundPowwer;
     public float stoopSpeed;
     public ParticleSystem particle;
