@@ -7,6 +7,7 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+  
     public RhythmVisualizatorPro rhythm;
     public Material fog;
     public Light[] pointLight;
@@ -87,7 +88,8 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
        
-        
+
+
         if (Input.GetMouseButton(0))
         {
 
@@ -247,7 +249,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                PlayerColor();
+               
                 Vibration.Vibrate(1000);
                 var color= damageImage.color;
                 color.a = 0.3f;
@@ -273,7 +275,7 @@ public class Player : MonoBehaviour
                 {
                     item.gameObject.SetActive(false);
                 }
-
+                PlayerColor();
             }
             Instantiate(FloatingParent, transform.position + new Vector3(0, 5, 0), Quaternion.identity);
         }
