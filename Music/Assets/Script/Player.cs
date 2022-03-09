@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 {
     public RhythmVisualizatorPro rhythm;
     public Material fog;
-    public Light pointLight;
+    public Light[] pointLight;
     public int levelId;
     public GameObject FloatingParent;
     public Image damageImage;
@@ -371,11 +371,18 @@ public class Player : MonoBehaviour
             ElapsedTime += Time.deltaTime;
             fog.color = Color.Lerp(fog.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
             rhythm.colors[0] = Color.Lerp(rhythm.colors[0], measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
-            pointLight.color = Color.Lerp(pointLight.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
+            for (int i = 0; i < pointLight.Length; i++)
+            {
+                pointLight[i].color = Color.Lerp(pointLight[i].color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
+            }
+           
             yield return null;
         }
         fog.color = measureCS.valuesList[listColorNumber];
-        pointLight.color = measureCS.valuesList[listColorNumber];
+        for (int i = 0; i < pointLight.Length; i++)
+        {
+            pointLight[i].color = measureCS.valuesList[listColorNumber];
+        }
     }
         public void RestartScene()
     {

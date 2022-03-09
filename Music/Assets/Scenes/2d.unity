@@ -12721,7 +12721,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rhythm: {fileID: 1668095450721983801}
   fog: {fileID: 2100000, guid: 6dda302b6d2afe844952eccb1b14613e, type: 2}
-  pointLight: {fileID: 724881996}
+  pointLight:
+  - {fileID: 724881996}
+  - {fileID: 1399088494}
+  - {fileID: 553444530}
   levelId: 0
   FloatingParent: {fileID: 4106748847223578048, guid: 7f8f927a9e90cef4ea3eb13945357cce, type: 3}
   damageImage: {fileID: 1377038590}
