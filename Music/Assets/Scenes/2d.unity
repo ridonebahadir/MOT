@@ -6576,6 +6576,10 @@ MonoBehaviour:
   rotateSpeed: 0.35
   rotateSpeedStart: 0
   valuesList: []
+  pointLight:
+  - {fileID: 553444530}
+  - {fileID: 1399088494}
+  - {fileID: 724881996}
   BackGroundColor: {fileID: 2100000, guid: 04479ba114661ce449c46ed0b464d4cd, type: 2}
   GlowColor: {fileID: 2100000, guid: 2b1b7f815ed574a4d879bd2a1a67c4da, type: 2}
   minColorBackGroundColor: {r: 0.0034887171, g: 0.092753254, b: 0.9245283, a: 0}

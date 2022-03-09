@@ -46,6 +46,7 @@ public class AudioMeasureCS : MonoBehaviour
   
     private float colorIntensity;
     [Header("UPDATE COLOR")]
+    public Light[] pointLight;
     //public Material changeColorObjectMaterial;
     //public Color minColor;
     //public Color maxColor;
@@ -236,7 +237,10 @@ public class AudioMeasureCS : MonoBehaviour
         }
         //changeColorObjectMaterial.color = Color.Lerp(maxColor, minColor, -colorIntensity);
         //changeColorObjectMaterial2.color = Color.Lerp(maxColor2, minColor2, -colorIntensity);
-        //pointLight.range = Mathf.Lerp(0,1000,-colorIntensity);
+       
+        pointLight[0].intensity = Mathf.Lerp(4,10,-colorIntensity);
+        pointLight[1].intensity = Mathf.Lerp(4,7.5f,-colorIntensity);
+        pointLight[2].intensity = Mathf.Lerp(4,10,-colorIntensity);
         //var main = BackGroundColor.main;
         //main.startColor= Color.Lerp(maxColorBackGroundColor, minColorBackGroundColor, -colorIntensity);
 
