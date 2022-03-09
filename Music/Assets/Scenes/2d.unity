@@ -8470,15 +8470,15 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 3500
   field of view: 60
   orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
+  orthographic size: 18.71
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -12791,7 +12791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aecbf81a1a946f42b5c53c17eefc98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wind: {fileID: 0}
   rhythm: {fileID: 1668095450721983801}
   fog: {fileID: 2100000, guid: 6dda302b6d2afe844952eccb1b14613e, type: 2}
   pointLight:
