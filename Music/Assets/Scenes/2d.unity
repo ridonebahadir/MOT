@@ -399,7 +399,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 403f2049d083e6d4998a096f4e0eeb7e, type: 2}
-  - {fileID: 2100000, guid: 403f2049d083e6d4998a096f4e0eeb7e, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7025,7 +7025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &445566701
 Transform:
   m_ObjectHideFlags: 0
@@ -8674,7 +8674,7 @@ GameObject:
   - component: {fileID: 553444531}
   - component: {fileID: 553444530}
   m_Layer: 0
-  m_Name: "Renge duyarl\u0131 Point Light \xF6n"
+  m_Name: "Renge duyarl\u0131 Point Light on"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15645,7 +15645,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d5be73e9b404175449ced5aa1cd8056f, type: 2}
-  - {fileID: 2100000, guid: d5be73e9b404175449ced5aa1cd8056f, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16534,7 +16534,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: ff76dbfadfe0e8545bcba86b0b3a58c3, type: 2}
-  - {fileID: 2100000, guid: ff76dbfadfe0e8545bcba86b0b3a58c3, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26886,7 +26886,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7a1356c76eec45c4b97643282aef6f42, type: 2}
-  - {fileID: 2100000, guid: 7a1356c76eec45c4b97643282aef6f42, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27170,7 +27170,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 9ad627dc231083a48a41eccbee2a877a, type: 2}
-  - {fileID: 2100000, guid: 9a314f7db98c622419511903f3f24252, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41894,7 +41894,7 @@ GameObject:
   - component: {fileID: 1929937489}
   - component: {fileID: 1929937490}
   m_Layer: 0
-  m_Name: "PlayerD\u0130stancePoint"
+  m_Name: PlayerDistancePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42414,7 +42414,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 4bb20561588a2ce4991a3b501357ded8, type: 2}
-  - {fileID: 2100000, guid: 4bb20561588a2ce4991a3b501357ded8, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44298,7 +44298,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 1a289ad07f208364796f973852f26d2b, type: 2}
-  - {fileID: 2100000, guid: 1a289ad07f208364796f973852f26d2b, type: 2}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55851,7 +55851,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 496c782ddc5184ad9ab1cedd88489407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

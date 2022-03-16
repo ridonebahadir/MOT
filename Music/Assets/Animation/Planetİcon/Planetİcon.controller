@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "PlanetI\u0307con"
+  m_Name: "Planet\u0130con"
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:

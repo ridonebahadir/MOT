@@ -239,12 +239,12 @@ public class AudioMeasureCS : MonoBehaviour
         //changeColorObjectMaterial.color = Color.Lerp(maxColor, minColor, -colorIntensity);
         //changeColorObjectMaterial2.color = Color.Lerp(maxColor2, minColor2, -colorIntensity);
        
-        pointLight[0].intensity = Mathf.Lerp(10,4,-colorIntensity);
-        pointLight[1].intensity = Mathf.Lerp(7.5f,4,-colorIntensity);
-        pointLight[2].intensity = Mathf.Lerp(10,4,-colorIntensity);
-        float min = 1f;
-        float max = 1.1f;
-        WaveFormTransfrom.transform.localScale = new Vector3(Mathf.Lerp(min, max, -colorIntensity), Mathf.Lerp(min, max, -colorIntensity), Mathf.Lerp(min, max, -colorIntensity));
+        pointLight[0].intensity = Mathf.Lerp(10,9,-colorIntensity);
+        pointLight[1].intensity = Mathf.Lerp(7.5f,6,-colorIntensity);
+        pointLight[2].intensity = Mathf.Lerp(10,9,-colorIntensity);
+        //float min = 1f;
+        //float max = 1.1f;
+       // WaveFormTransfrom.transform.localScale = new Vector3(Mathf.Lerp(min, max, -colorIntensity), Mathf.Lerp(min, max, -colorIntensity), Mathf.Lerp(min, max, -colorIntensity));
         //var main = BackGroundColor.main;
         //main.startColor= Color.Lerp(maxColorBackGroundColor, minColorBackGroundColor, -colorIntensity);
 
@@ -376,7 +376,7 @@ public class AudioMeasureCS : MonoBehaviour
     void EscapeSpawn()
     {
         int randomChild = Random.Range(0, WaveFormTransfrom.GetChild(0).childCount);
-        EscapeClone = Instantiate(Escape, WaveFormTransfrom.transform.position + new Vector3(0, Random.Range(-40, -50), 0), Quaternion.identity);
+        EscapeClone = Instantiate(Escape, WaveFormTransfrom.transform.position + new Vector3(0, Random.Range(-100, -150), 0), Quaternion.identity);
         //EscapeClone = Instantiate(Escape, new Vector3(WaveFormTransfrom.GetChild(0).GetChild(randomChild).transform.position.x, WaveFormTransfrom.GetChild(0).GetChild(randomChild).transform.position.y + 40f), Quaternion.identity);
         EscapeClone.transform.parent = WaveFormTransfrom.GetChild(1).transform;
     }
