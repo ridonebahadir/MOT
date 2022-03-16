@@ -7,9 +7,10 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+  
     public RhythmVisualizatorPro rhythm;
     public Material fog;
-    public Light pointLight;
+    public Light[] pointLight;
     public int levelId;
     public GameObject FloatingParent;
     public Image damageImage;
@@ -22,7 +23,7 @@ public class Player : MonoBehaviour
     public AudioMeasureCS measureCS;
     public GameManager gameManager;
     Rigidbody rb;
-    [Range(0,1000)]
+    [Range(0,2000)]
     public float boundPowwer;
     public float stoopSpeed;
     public ParticleSystem particle;
@@ -87,7 +88,8 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
        
-        
+
+
         if (Input.GetMouseButton(0))
         {
 
@@ -247,7 +249,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                PlayerColor();
+               
                 Vibration.Vibrate(1000);
                 var color= damageImage.color;
                 color.a = 0.3f;
@@ -273,7 +275,7 @@ public class Player : MonoBehaviour
                 {
                     item.gameObject.SetActive(false);
                 }
-
+                PlayerColor();
             }
             Instantiate(FloatingParent, transform.position + new Vector3(0, 5, 0), Quaternion.identity);
         }
@@ -371,11 +373,18 @@ public class Player : MonoBehaviour
             ElapsedTime += Time.deltaTime;
             fog.color = Color.Lerp(fog.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
             rhythm.colors[0] = Color.Lerp(rhythm.colors[0], measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
-            pointLight.color = Color.Lerp(pointLight.color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
+            for (int i = 0; i < pointLight.Length; i++)
+            {
+                pointLight[i].color = Color.Lerp(pointLight[i].color, measureCS.valuesList[listColorNumber], (ElapsedTime / TotalTime));
+            }
+           
             yield return null;
         }
         fog.color = measureCS.valuesList[listColorNumber];
-        pointLight.color = measureCS.valuesList[listColorNumber];
+        for (int i = 0; i < pointLight.Length; i++)
+        {
+            pointLight[i].color = measureCS.valuesList[listColorNumber];
+        }
     }
         public void RestartScene()
     {
